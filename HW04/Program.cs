@@ -32,10 +32,10 @@ int[,,] InitMatrix(int rows, int columns, int depth)
     {
         for (int j = 0; j < columns; j++)
         {
-           for (int k = 0; k < depth; k++)
-           {
-            matrix[i, j, k] = rnd.Next(10, 99);
-           }
+            for (int k = 0; k < depth; k++)
+            {
+                matrix[i, j, k] = rnd.Next(10, 99);
+            }
         }
     }
     return matrix;
@@ -55,8 +55,6 @@ void PrintMatrix(int[,,] matrix)
         }
     }
 }
-
-
 int y = GetNumber("Введите количество строк массива");
 int x = GetNumber("Введите количество столбцов массива");
 int z = GetNumber("Введите количество этажей массива");
